@@ -1,0 +1,2450 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!-- Meta Tags For Seo + Page Optimization -->
+    <meta charset="utf-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="description" content="">
+
+    <meta name="author" content="">
+
+    <!-- Insert Favicon Here -->
+    <link href="images/favicon.png" rel="icon">
+
+    <!-- Page Title(Name)-->
+    <title>BIENVENIDO A MYBOX</title>
+
+    <!-- Bootstrap CSS File -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+
+    <!-- Font-Awesome CSS File -->
+
+    <script src="https://use.fontawesome.com/65e2678dab.js"></script>
+    <!-- <link rel="stylesheet" href="css/font-awesome.css"> -->
+
+    <!-- Slider Revolution CSS File -->
+    <link rel="stylesheet" href="css/settings.css">
+
+    <!--  Fancy Box CSS File -->
+    <link rel="stylesheet" href="css/jquery.fancybox.css">
+
+    <!-- Circleful CSS File -->
+    <link rel="stylesheet" href="css/jquery.circliful.css">
+
+    <!-- Animate CSS File -->
+    <link rel="stylesheet" href="css/animate.css">
+
+    <!-- Cube Portfolio CSS File -->
+    <link rel="stylesheet" href="css/cubeportfolio.min.css">
+
+    <!-- Owl Carousel CSS File -->
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+
+    <!-- Swiper CSS File -->
+    <link rel="stylesheet" href="css/swiper.min.css">
+
+    <!-- Custom Style CSS File -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Color StyleSheet CSS File -->
+    <link href="css/orange.css" rel="stylesheet" id="color" type="text/css">
+
+</head>
+
+<body data-spy="scroll" data-target=".navbar" data-offset="50" id="body" class="gradient_version">
+
+    <!-- Loader -->
+
+    <div class="loader">
+
+        <div class="loader-inner">
+
+            <div class="spinner">
+
+                <div class="dot1"></div>
+
+                <div class="dot2"></div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- modales -->
+    <div class="modal modal-fade" tabindex="-1" id="modalCoworking">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header" style="display: flex">
+                    <h5 class="modal-title" style="flex-grow: 1;">Comprar Plan Coworking</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <iframe width="100%" height="400" src="https://www.youtube.com/embed/E9p5j2P9310"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                        </div>
+                        <div class="col-md-6">
+                            <form id="form-coworking">
+                                <div class="form-group">
+                                    <label>Nombre</label>
+                                    <input type="text" name="name" id="NOMBRE_COOWORKING" placeholder="Tu nombre"
+                                        class="form-control" required>
+                                </div>
+                                <div class="form-group">
+                                    <label>Email</label>
+                                    <input type="email" name="email" id="EMAIL_COOWORKING" placeholder="Tu email"
+                                        class="form-control" required>
+                                </div>
+                                <div class="form-group">
+                                    <label>ID/NIT</label>
+                                    <input type="number" name="nit" id="NIT_COOWORKING"
+                                        placeholder="Tu NIT o identificacion" class="form-control" required>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="submit" class="bg_pink button button_default_style open_sans bg_before_navy"
+                        style="border-style: hidden;" onclick="Comprar_Cooworking();">Comprar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal modal-fade" tabindex="-1" id="modalPrepago">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header" style="display: flex">
+                    <h5 class="modal-title" style="flex-grow: 1;">Comprar Plan Prepago</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <iframe width="100%" height="400px" src="https://www.youtube.com/embed/0uZ-MbP5AGo"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                        </div>
+                        <div class="col-md-6">
+                            <form id="form-prepago">
+                                <div class="form-group">
+                                    <label>Nombre</label>
+                                    <input type="text" name="name" id="NOMBRE_PREPAGO" placeholder="Tu nombre"
+                                        class="form-control" required>
+                                </div>
+                                <div class="form-group">
+                                    <label>Email</label>
+                                    <input type="email" name="email" id="EMAIL_PREPAGO" placeholder="Tu email"
+                                        class="form-control" required>
+                                </div>
+                                <div class="form-group">
+                                    <label>ID/NIT</label>
+                                    <input type="number" name="nit" id="NIT_PREPAGO"
+                                        placeholder="Tu NIT o identificacion" class="form-control" required>
+                                </div>
+                                <div class="form-group">
+                                    <label>Saldo a recargar</label>
+                                    <input type="number" name="valor" id="VALOR_RECARGA_PREPAGO"
+                                        placeholder="Saldo a recargar" class="form-control" required>
+                                </div>
+                                <div class="form-group">
+                                    <label style="font-weight: bold;color: #000;">Si tienes un codigo promocional, usalo
+                                        aqui</label>
+                                    <input type="text" class="form-control" style="border: 1px solid green;"
+                                        id="CODIGO_CORTESIA" placeholder="Codigo promocional o cortesia">
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="submit" class="bg_pink button button_default_style open_sans bg_before_navy"
+                        style="border-style: hidden;" onclick="Comprar_Prepago();">Comprar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade fade" id="modalAsistencia" tabindex="-1">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header" style="display: flex">
+                    <h5 class="modal-title" style="flex-grow: 1">Comprar Plan Asistencia Total</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <iframe width="100%" height="400" src="https://www.youtube.com/embed/WFjMG-K4Lm8"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card text-black bg-white text-center">
+                                <div class="card-content">
+                                    <h1 class="card-title mt-3" style="color: green;font-size: 25px;font-weight: 900;">
+                                        ¡APROVECHA ESTA OFERTA!
+                                    </h1>
+                                    <img src="images/regalo.png" alt="element 04" width="150" class="float-center mt-3">
+                                    <div class="card-body pt-3">
+                                        <h1 class="card-title mt-3" style="line-height: 30px; line-height: 30px;">¡PROMO
+                                            DEL MES!</h1>
+                                        <p class="card-text"
+                                            style="font-size: 35px;color: #BD4646;font-weight: bold;line-height: 30px;">
+                                            25% OFF</p>
+                                        <p class="card-text" style="font-size: 35px;color: green;font-weight: bold;"
+                                            style="line-height: 30px;">
+                                            AHORRA $100.000
+                                        </p>
+                                        <p class="card-text" style="font-size: 20px;color: #000;"><span
+                                                style="font-weight: bold; line-height: 15px;">Aparte recibes
+                                                $100.000</span> de recarga de <span
+                                                style="font-weight: bold;">saldo</span></p>
+                                        <button type="submit"
+                                            class="bg_pink button button_default_style open_sans bg_before_navy"
+                                            style="border-style: hidden;" onclick="Recoger_Datos();">Comprar</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade fade" id="modalAsistencia2" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title" id="exampleModalLongTitle">Estas a solo un paso</h3>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close" id="btn_cerrar_MCE">
+                        <span aria-hidden="true" style="font-size:35px;color:red;">×</span>
+                    </button><br>
+                </div>
+                <div class="modal-body">
+                    <form id="FORM_DATOS">
+                        <label style="font-size: 20px;color:#000;">Necesitamos tu correo electronico para enviarte
+                            informacion adicional </label><br>
+                        <input type="email" class="form-control" style="font-size: 20px;border: 1px solid green;"
+                            id="EMAIL_PREVENTIVO" autocomplete="off"><br>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <!--img id="GIF_CARGUE" style="display:none;width:145px;height:115px;" src="images/loading.gif"-->
+                    <button class="bg_pink button button_default_style open_sans bg_before_navy" id="BESM"
+                        style="border-style: hidden;" type="button" onclick="Pagar();">Enviar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Fin modales -->
+
+    <!-- Parent Section -->
+
+    <section class="page_content_parent_section">
+        <!-- Header Section -->
+
+        <header>
+
+            <!-- Navbar Section -->
+
+            <nav class="navbar navbar-fixed-top green">
+                <div class="container-fluid">
+                    <!--second nav button -->
+                    <div id="menu_bars" class="right menu_bars">
+                        <span class="t1"></span>
+                        <span class="t2"></span>
+                        <span class="t3"></span>
+                    </div>
+                    <!-- Brand and toggle get grouped for better mobile display -->
+
+
+                    <div class="container">
+                        <div class="navbar-header">
+                            <a class="navbar-brand orange_logo" href="#"><img src="images/logo-orange.png"
+                                    alt="logo"></a>
+                        </div>
+                        <!-- Collect the nav links, forms, and other content for toggling -->
+                        <div class="collapse navbar-collapse navbar-ex1-collapse  ">
+                            <ul class="nav navbar-nav navbar-right">
+                                <li class="active"><a href="#inicio" class="scroll">Inicio</a></li>
+                                <li><a href="#nosotros" class="scroll">Nosotros</a></li>
+                                <li><a href="#servicios" class="scroll">Servicios</a></li>
+                                <!--<li><a href="#team" class="scroll">Equipo</a></li>-->
+                                <li><a href="#planes" class="scroll">Planes</a></li>
+                                <!--<li><a href="#blog" class="scroll">Blog</a></li>-->
+                                <li><a href="#contacto" class="scroll">Contáctenos</a></li>
+                            </ul>
+                        </div>
+                        <!-- /.navbar-collapse -->
+                    </div>
+                    <div class="sidebar_menu">
+                        <nav class="pushmenu pushmenu-right">
+                            <a class="push-logo" href="#"><img src="images/logo-orange-dark.png" alt="logo"></a>
+                            <ul class="push_nav centered">
+                                <li class="clearfix">
+                                    <a href="#inicio" class="scroll"><span>01.</span>Inicio</a>
+
+                                </li>
+                                <li class="clearfix">
+                                    <a href="#nosotros" class="scroll"> <span>02.</span>Nosotros</a>
+
+                                </li>
+                                <li class="clearfix">
+                                    <a href="#servicios" class="scroll"> <span>03.</span>Servicios</a>
+
+                                </li>
+                                <!--
+                            <li class="clearfix">
+                                <a href="#team" class="scroll"> <span>04.</span>Equipo</a>
+
+                            </li>
+							-->
+                                <li class="clearfix">
+                                    <a href="#planes" class="scroll"> <span>04.</span>Planes</a>
+
+                                </li>
+                                <!-- <li class="clearfix">
+                                <a href="#blog" class="scroll"> <span>06.</span>Blog</a>
+
+                            </li>-->
+                                <li class="clearfix">
+                                    <a href="#contacto" class="scroll"> <span>05.</span>Contacto</a>
+
+                                </li>
+                            </ul>
+                            <div class="clearfix"></div>
+                            <ul class="social_icon black top25 bottom20 list-inline">
+
+                                <li><a href="https://www.facebook.com/myboxbog/" class="navy_blue facebook"><i
+                                            class="fa fa-fw fa-facebook"></i></a></li>
+                                <li><a href="https://www.instagram.com/myboxbogota/" class="navy_blue instagram"><i
+                                            class="text-center fa fa-instagram "></i></a></li>
+                                <li><a href="https://www.youtube.com/channel/UCa-tO7TyPtBjAHnpipDla_A"
+                                        class="navy_blue youtube"><i class="text-center fa fa-youtube "></i></a></li>
+
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </nav>
+
+            <!-- /Navbar Section -->
+
+            <!-- Main Slider Section -->
+
+            <div class="page_content_main_slider" id="inicio">
+
+                <div class="swiper-container main_slider " style="background: transparent;">
+
+                    <div class="swiper-wrapper">
+
+                        <div class="swiper-slide">
+
+                            <div class="container">
+
+                                <h1 class="raleway white_color swiper-slider-heading">¡Esta es la <span
+                                        class="font_400">puerta de entrada</span> para tu <br> e-commerce!</h1>
+
+                                <br>
+
+                                <h3 class="raleway white_color swiper-slider-small-heading"> Abrir tu tienda en MYBOX es
+                                    muy fácil. <br><strong>¡Nosotros te ayudamos con todo! </strong></h3>
+
+                                <div class="button_div">
+
+                                    <a href="#nosotros"
+                                        class="scroll button button_default_style open_sans bg_pink bg_before_pink bg_before_white btn1">Empieza
+                                        Ahora</a>
+
+                                    <a href="#contacto"
+                                        class="scroll button button_default_style bordered_button open_sans   bg_before_white btn2">Para
+                                        saber mas </a>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="swiper-slide">
+
+                            <div class="container">
+
+                                <h1 class="raleway white_color swiper-slider-heading">¿Te gustaría <span
+                                        class="font_400">mejorar las ventas</span> de tu e-commerce?</h1>
+
+                                <br>
+
+                                <h3 class="raleway white_color swiper-slider-small-heading"> Llegar a lugares donde
+                                    otros comercios no han llegado...</h3>
+
+                                <div class="button_div">
+
+                                    <a href="#nosotros"
+                                        class="scroll button button_default_style open_sans bg_pink bg_before_pink bg_before_white btn1">Empieza
+                                        Ahora</a>
+
+                                    <a href="#contacto"
+                                        class="scroll button button_default_style bordered_button open_sans   bg_before_white btn2">Para
+                                        saber mas </a>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="swiper-slide">
+
+                            <div class="container">
+
+                                <h1 class="raleway white_color swiper-slider-heading">Todo en <span class="font_400">una
+                                        misma </span> caja</h1>
+
+                                <br>
+
+                                <h3 class="raleway white_color swiper-slider-small-heading">Comercio electronico para
+                                    todos</h3>
+
+                                <div class="button_div">
+
+                                    <a href="#nosotros"
+                                        class="scroll button button_default_style open_sans bg_pink bg_before_pink bg_before_white btn1">Empieza
+                                        Ahora</a>
+
+                                    <a href="#contacto"
+                                        class="scroll button button_default_style bordered_button open_sans   bg_before_white btn2">Para
+                                        saber mas </a>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <!-- Add Pagination -->
+
+                    <div class="swiper-pagination"></div>
+
+                    <!-- Add Arrows -->
+
+                    <div class="swiper-button-next swiper-arrows fa fa-angle-right hidden-sm hidden-xs"></div>
+
+                    <div class="swiper-button-prev swiper-arrows fa fa-angle-left hidden-sm hidden-xs"></div>
+
+                </div>
+
+            </div>
+
+            <!-- /Main Slider Section -->
+
+        </header>
+
+        <!-- /Header Section -->
+
+        <!-- Half Section -->
+
+        <section class="half_section_main bg_grey" id="nosotros">
+
+            <div class="half_section_picture hidden-sm hidden-xs">
+
+                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/E9p5j2P9310" frameborder="0"
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+
+            </div>
+
+            <div class="container container_big">
+
+                <div class="row">
+
+                    <div class="col-md-6 col-md-offset-6">
+
+                        <div class="side_section_text big_padding">
+
+                            <p class="default_small_heading raleway blue_color font_200">¿Por qué</p>
+
+                            <h3 class="default_section_heading raleway navy_blue">MYBOX? <span class="font_200"></span>
+                            </h3>
+
+                            <hr class="default_divider default_divider_blue " style="margin-left: 0;">
+
+                            <p class="default_text_light default_text open_sans">
+
+                                MYBOX es una plataforma que permite tener tu catálogo, hacer tus ventas, recibir tus
+                                pagos, organizar la logística, fidelizar y comunicarte con tus clientes. Tu negocio en
+                                un solo  lugar.
+                                 
+                            </p>
+
+                            <div class="row">
+
+                                <div class="col-md-6">
+
+                                    <div class="icons_div_small">
+
+                                        <p class="small_heading_navy raleway font_400"> <i class="fa fa-list pink_color"
+                                                aria-hidden="true"></i> Catálogo </p>
+                                        <p class="default_text default_text_light open_sans">
+                                            Es un aplicativo multipropósito que permite la creación de tiendas online a
+                                            través de las cuales puedes exhibir tu catálogo de productos y/o servicios.
+                                        </p>
+
+                                    </div>
+
+                                </div>
+
+                                <div class="col-md-6">
+
+                                    <div class="icons_div_small">
+
+                                        <p class="small_heading_navy raleway font_400"> <i
+                                                class="fa fa-comments-o pink_color" aria-hidden="true"></i>Manejo de redes</p>
+
+                                        <p class="default_text default_text_light open_sans">
+                                            Imagina tener tu tienda virtual y controlar sus aspectos básicos, agilizar tu comunicación y enfocar tus campañas de
+                                            venta en redes; todo, en una misma plataforma.
+                                        </p>
+
+                                    </div>
+
+                                </div>
+                                <div class="col-md-12 text-center">
+                                    <a href="#servicios" style="margin-top: 40px;"
+                                        class="scroll bg_pink button button_default_style open_sans bg_before_navy">Conoce Nuestros Servicios</a>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- half Section Ended -->
+
+        <!-- Circle Js Skill Section -->
+
+        <!-- Skill Heading Section -->
+
+        <section class="combined_skills_section big_padding" id="servicios">
+
+
+            <section class="skill_section">
+
+                <div class="container">
+
+                    <div class="skill_section_inner">
+
+                        <p class="default_text raleway text-center default_small_heading blue_color font_200">Cuales
+                        </p>
+
+                        <h2 class="default_section_heading text-center">
+
+                            <span class="font_200">
+
+                                Son
+
+                            </span>
+
+                            Nuestros
+
+                            <span class="font_200">
+
+                                Servicios
+
+                            </span>
+
+                        </h2>
+
+                        <hr class="default_divider default_divider_blue default_divider_big">
+
+                    </div>
+
+                </div>
+
+            </section>
+
+            <!-- /Skill Section -->
+
+            <section class="circle_pie_section">
+
+                <div class="container">
+
+                    <div class="row">
+
+                        <div class="col-xs-12">
+
+                            <div class="expertise_section_inner">
+
+                                <div class="row">
+
+                                    <div class="col-md-3">
+
+                                        <div class="expertise_block text-center margin_after_tab wow slideInLeft">
+
+                                            <i class=" text-center fa fa-user-circle-o pink_color "></i>
+
+
+
+                                            <h3 class="small_heading_navy text-center raleway h3_pink font_400"><span
+                                                    class="font_600 pink_color">01.</span> Fidelización</h3>
+
+                                            <p class="default_text text-center open_sans default_text_light">
+
+                                                Tus clientes accederán a un programa de recompensa por puntos, los
+                                                cuales podrán usar para comprar tus productos o servicios.
+
+                                            </p>
+
+                                        </div>
+
+                                    </div>
+
+                                    <div class="col-md-3">
+
+                                        <div class="expertise_block text-center margin_after_tab wow fadeInUp">
+
+                                            <i class="fa fa-users pink_color"></i>
+
+                                            <h3 class="small_heading_navy text-center raleway h3_pink font_400"><span
+                                                    class="font_600 pink_color">02.</span> Segmentación de clientes</h3>
+
+                                            <p class="default_text text-center open_sans default_text_light">
+
+                                                Tendrás clasificados a tus clientes en función de su comportamiento de
+                                                compra, localización, sexo y edad.
+
+                                            </p>
+
+                                        </div>
+
+                                    </div>
+
+                                    <div class="col-md-3">
+
+                                        <div class="expertise_block text-center wow slideInRight">
+
+                                            <i class="fa fa-bar-chart pink_color"></i>
+
+                                            <h3 class="small_heading_navy text-center raleway h3_pink font_400"><span
+                                                    class="font_600 pink_color">03.</span> Control de ventas</h3>
+
+                                            <p class="default_text text-center open_sans default_text_light">
+
+                                                Gestionarás y controlarás tus ventas de forma eficiente, lo cual te
+                                                permitirá tomar decisiones asertivas para tu negocio.
+
+                                            </p>
+
+                                        </div>
+
+                                    </div>
+
+                                    <div class="col-md-3">
+
+                                        <div class="expertise_block text-center margin_after_tab wow fadeInUp">
+
+                                            <i class="fa fa-shopping-basket pink_color"></i>
+
+                                            <h3 class="small_heading_navy text-center raleway h3_pink font_400"><span
+                                                    class="font_600 pink_color">04.</span> Gestión de pedidos</h3>
+
+                                            <p class="default_text text-center open_sans default_text_light">
+
+                                                Organizarás y gestionarás la logística interna de tus procesos y
+                                                pedidos.
+
+                                            </p>
+
+                                        </div>
+
+                                    </div>
+                                    <div class="col-md-12 text-center">
+                                        <a href="#planes" style="margin-top: 80px;"
+                                        class="scroll bg_pink button button_default_style open_sans bg_before_navy">Conoce Nuestros Planes</a>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+        </section>
+
+        <!-- /Circel Js Skill Section -->
+
+        <!-- Stats Section -->
+
+        <section class="stats_section big_padding">
+
+            <div class="container">
+
+                <div class="row">
+
+                    <div class="col-md-3 col-sm-6 margin_after_tab text-center">
+
+                        <div class="stats_section_inner">
+
+                            <i class="fa fa-check white_color stats_section_icon text-center" aria-hidden="true"></i>
+
+                            <h3 class="default_section_heading white_color raleway number-scroll"> 200 </h3>
+
+                            <p class="small_heading_navy white_color open_sans font_200">Proyectos Completados</p>
+
+                        </div>
+
+                    </div>
+
+                    <div class="col-md-3 col-sm-6 margin_after_tab text-center">
+
+                        <div class="stats_section_inner">
+
+                            <i class="fa fa-flag white_color stats_section_icon text-center" aria-hidden="true"></i>
+
+                            <h3 class="default_section_heading white_color raleway number-scroll"> 5 </h3>
+
+                            <p class="small_heading_navy white_color open_sans font_200">Paises</p>
+
+                        </div>
+
+                    </div>
+
+                    <div class="col-md-3 col-sm-6 margin_after_tab text-center">
+
+                        <div class="stats_section_inner">
+
+                            <i class="fa fa-globe white_color stats_section_icon text-center" aria-hidden="true"></i>
+
+                            <h3 class="default_section_heading white_color raleway number-scroll"> 1000</h3>
+
+                            <p class="small_heading_navy white_color open_sans font_200">Usuarios Registrados </p>
+
+                        </div>
+
+                    </div>
+
+                    <div class="col-md-3 col-sm-6 margin_after_tab text-center">
+
+                        <div class="stats_section_inner">
+
+                            <i class="fa fa-gift white_color stats_section_icon text-center" aria-hidden="true"></i>
+
+                            <h3 class="default_section_heading white_color raleway number-scroll"> 9 </h3>
+
+                            <p class="small_heading_navy white_color open_sans font_200">Ganadores de los Premios</p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- /Stats Section -->
+
+        <!-- Portfolio Section 
+
+    <section class="portfolio_section big_padding" style="padding-bottom: 0;" id="work">
+
+        <div class="container">
+
+            <p class="default_small_heading raleway text-center blue_color font_200">Catalogo  de</p>
+
+            <h2 class="default_section_heading text-center">
+
+                <span class="font_200">  </span>
+
+                nuestros 
+
+                <span class="font_200">Productos</span>
+
+            </h2>
+
+            <hr class="default_divider default_divider_blue default_divider_big">
+
+        </div>
+
+        <div  class="cube_fullwidth_style_portfolio">
+
+            <div id="js-filters-mosaic-flat" class="cbp-l-filters-buttonCenter open_sans">
+
+                <div data-filter="*" class="cbp-filter-item-active cbp-filter-item open_sans button bg_before_pink">
+
+                    All
+
+                    <div class="cbp-filter-counter"></div>
+
+                </div>
+
+                <div data-filter=".branding" class="cbp-filter-item open_sans button bg_before_pink">
+
+                    Branding
+
+                    <div class="cbp-filter-counter"></div>
+
+                </div>
+
+                <div data-filter=".web-design" class="cbp-filter-item open_sans button bg_before_pink">
+
+                    Web Design
+
+                    <div class="cbp-filter-counter"></div>
+
+                </div>
+
+                <div data-filter=".photography" class="cbp-filter-item open_sans button bg_before_pink">
+
+                    Photography
+
+                    <div class="cbp-filter-counter"></div>
+
+                </div>
+
+            </div>
+
+            <div id="js-grid-mosaic-flat" class="cbp cbp-l-grid-mosaic-flat">
+
+                <div class="cbp-item web-design photography">
+
+                    <a href="images/projects-1.jpg" class="cbp-caption cbp-lightbox" data-title="Bolt UI<br>by Tiberiu Neamu">
+
+                        <div class="cbp-caption-defaultWrap">
+
+                            <img src="images/projects-1.jpg" alt="">
+
+                        </div>
+
+                        <div class="cbp-caption-activeWrap">
+
+                            <div class="cbp-l-caption-alignCenter">
+
+                                <div class="cbp-l-caption-body">
+
+                                    <div class="cbp-l-caption-title">Bolt UI</div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </a>
+
+                </div>
+
+                <div class="cbp-item branding photography">
+
+                    <a href="images/projects-2.jpg" class="cbp-caption cbp-lightbox" data-title="World Clock<br>by Paul Flavius Nechita">
+
+                        <div class="cbp-caption-defaultWrap">
+
+                            <img src="images/projects-2.jpg" alt="">
+
+                        </div>
+
+                        <div class="cbp-caption-activeWrap">
+
+                            <div class="cbp-l-caption-alignCenter">
+
+                                <div class="cbp-l-caption-body">
+
+                                    <div class="cbp-l-caption-title">World Clock</div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </a>
+
+                </div>
+
+                <div class="cbp-item branding photography">
+
+                    <a href="images/projects-3.jpg" class="cbp-caption cbp-lightbox" data-title="WhereTO App<br>by Tiberiu Neamu">
+
+                        <div class="cbp-caption-defaultWrap">
+
+                            <img src="images/projects-3.jpg" alt="">
+
+                        </div>
+
+                        <div class="cbp-caption-activeWrap">
+
+                            <div class="cbp-l-caption-alignCenter">
+
+                                <div class="cbp-l-caption-body">
+
+                                    <div class="cbp-l-caption-title">WhereTO App</div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </a>
+
+                </div>
+
+                <div class="cbp-item branding graphic">
+
+                    <a href="images/projects-4.jpg" class="cbp-caption cbp-lightbox" data-title="Digital Menu<br>by Cosmin Capitanu">
+
+                        <div class="cbp-caption-defaultWrap">
+
+                            <img src="images/projects-4.jpg" alt="">
+
+                        </div>
+
+                        <div class="cbp-caption-activeWrap">
+
+                            <div class="cbp-l-caption-alignCenter">
+
+                                <div class="cbp-l-caption-body">
+
+                                    <div class="cbp-l-caption-title">Digital Menu</div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </a>
+
+                </div>
+
+                <div class="cbp-item web-design branding">
+
+                    <a href="images/projects-6.jpg" class="cbp-caption cbp-lightbox" data-title="iDevices<br>by Tiberiu Neamu">
+
+                        <div class="cbp-caption-defaultWrap">
+
+                            <img src="images/projects-6.jpg" alt="">
+
+                        </div>
+
+                        <div class="cbp-caption-activeWrap">
+
+                            <div class="cbp-l-caption-alignCenter">
+
+                                <div class="cbp-l-caption-body">
+
+                                    <div class="cbp-l-caption-title">iDevices</div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </a>
+
+                </div>
+
+
+                <div class="cbp-item photography">
+
+                    <a href="images/projects-5.jpg" class="cbp-caption cbp-lightbox" data-title="Seemple* Music<br>by Tiberiu Neamu">
+
+                        <div class="cbp-caption-defaultWrap">
+
+                            <img src="images/projects-5.jpg" alt="">
+
+                        </div>
+
+                        <div class="cbp-caption-activeWrap">
+
+                            <div class="cbp-l-caption-alignCenter">
+
+                                <div class="cbp-l-caption-body">
+
+                                    <div class="cbp-l-caption-title">Seemple* Music</div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    Portfolio Section -->
+
+        <!-- Section Team
+
+    <section class="team_section big_padding text-center " id="team">
+
+        <div class="container">
+
+            <p class="raleway default_small_heading blue_color font_200">Let's Meet</p>
+
+            <div class="col-xs-12">
+
+                <h2 class="default_section_heading text-center">
+
+                            <span class="font_200">
+
+                                Our
+
+                            </span>
+
+                    Creative
+
+                    <span class="font_200">
+
+                                Team
+
+                            </span>
+
+                </h2>
+
+                <hr class="default_divider default_divider_blue default_divider_big">
+
+                <div class="swiper-container team_slider">
+
+                    <div class="swiper-wrapper">
+
+                        <div class="swiper-slide">
+
+                            <div class="team_detail wow slideInLeft">
+
+                                <div class="team_detail_inner">
+
+                                    <img src="images/team-1.jpg" alt="team_img">
+
+                                </div>
+
+                                <h3 class="small_heading_navy default_small_heading navy_blue text-center raleway font_400">Chris Martin</h3>
+
+                                <p class="default_text text-center open_sans">CEO - Company</p>
+
+                                <ul class="team_members_list">
+
+                                    <li>
+
+                                        <a href="#." class="team_members_icons anchor_none_style google_team">
+
+                                            <i class="fa fa-linkedin team_members_icon_inner" aria-hidden="true"></i>
+
+                                        </a>
+
+                                    </li>
+
+                                    <li>
+
+                                        <a href="#." class="team_members_icons anchor_none_style facebook_team">
+
+                                            <i class="fa fa-facebook team_members_icon_inner" aria-hidden="true"></i>
+
+                                        </a>
+
+                                    </li>
+
+                                    <li>
+
+                                        <a href="#." class="team_members_icons anchor_none_style twiiter_team">
+
+                                            <i class="fa fa-twitter team_members_icon_inner" aria-hidden="true"></i>
+
+                                        </a>
+
+                                    </li>
+
+                                </ul>
+
+                            </div>
+
+                        </div>
+
+                        <div class="swiper-slide">
+
+                            <div class="team_detail wow fadeInUpBig">
+
+                                <div class="team_detail_inner">
+
+                                    <img src="images/team-2.jpg" alt="team_img">
+
+                                </div>
+
+                                <h3 class="small_heading_navy default_small_heading navy_blue text-center raleway font_400">Ellyse Perry</h3>
+
+                                <p class="default_text text-center open_sans">Java Developer</p>
+
+                                <ul class="team_members_list">
+
+                                    <li>
+
+                                        <a href="#." class="team_members_icons anchor_none_style google_team">
+
+                                            <i class="fa fa-linkedin team_members_icon_inner" aria-hidden="true"></i>
+
+                                        </a>
+
+                                    </li>
+
+                                    <li>
+
+                                        <a href="#." class="team_members_icons anchor_none_style facebook_team">
+
+                                            <i class="fa fa-facebook team_members_icon_inner" aria-hidden="true"></i>
+
+                                        </a>
+
+                                    </li>
+
+                                    <li>
+
+                                        <a href="#." class="team_members_icons anchor_none_style twiiter_team">
+
+                                            <i class="fa fa-twitter team_members_icon_inner" aria-hidden="true"></i>
+
+                                        </a>
+
+                                    </li>
+
+                                </ul>
+
+                            </div>
+
+                        </div>
+
+                        <div class="swiper-slide">
+
+                            <div class="team_detail wow fadeInDownBig">
+
+                                <div class="team_detail_inner">
+
+                                    <img src="images/team-3.jpg" alt="team_img">
+
+                                </div>
+
+                                <h3 class="small_heading_navy default_small_heading navy_blue text-center raleway font_400">Danny M</h3>
+
+                                <p class="default_text text-center open_sans">Web Designer</p>
+
+                                <ul class="team_members_list">
+
+                                    <li>
+
+                                        <a href="#." class="team_members_icons anchor_none_style google_team">
+
+                                            <i class="fa fa-linkedin team_members_icon_inner" aria-hidden="true"></i>
+
+                                        </a>
+
+                                    </li>
+
+                                    <li>
+
+                                        <a href="#." class="team_members_icons anchor_none_style facebook_team">
+
+                                            <i class="fa fa-facebook team_members_icon_inner" aria-hidden="true"></i>
+
+                                        </a>
+
+                                    </li>
+
+                                    <li>
+
+                                        <a href="#." class="team_members_icons anchor_none_style twiiter_team">
+
+                                            <i class="fa fa-twitter team_members_icon_inner" aria-hidden="true"></i>
+
+                                        </a>
+
+                                    </li>
+
+                                </ul>
+
+                            </div>
+
+                        </div>
+
+                        <div class="swiper-slide">
+
+                            <div class="team_detail wow slideInRight">
+
+                                <div class="team_detail_inner">
+
+                                    <img src="images/team-4.jpg" alt="team_img">
+
+                                </div>
+
+                                <h3 class="small_heading_navy default_small_heading navy_blue text-center raleway font_400">Sarah Taylor</h3>
+
+                                <p class="default_text text-center open_sans">Graphic Designer</p>
+
+                                <ul class="team_members_list">
+
+                                    <li>
+
+                                        <a href="#." class="team_members_icons anchor_none_style google_team">
+
+                                            <i class="fa fa-linkedin team_members_icon_inner" aria-hidden="true"></i>
+
+                                        </a>
+
+                                    </li>
+
+                                    <li>
+
+                                        <a href="#." class="team_members_icons anchor_none_style facebook_team">
+
+                                            <i class="fa fa-facebook team_members_icon_inner" aria-hidden="true"></i>
+
+                                        </a>
+
+                                    </li>
+
+                                    <li>
+
+                                        <a href="#." class="team_members_icons anchor_none_style twiiter_team">
+
+                                            <i class="fa fa-twitter team_members_icon_inner" aria-hidden="true"></i>
+
+                                        </a>
+
+                                    </li>
+
+                                </ul>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+     Half Section -->
+
+        <section class="half_section_main half_section_right bg_grey">
+
+            <div class="half_section_picture hidden-sm hidden-xs"></div>
+
+            <div class="container container_big">
+
+                <div class="row">
+
+                    <div class="col-md-6">
+
+                        <div class="side_section_text big_padding">
+
+                            <p class="default_small_heading raleway blue_color font_200">La mejor Experiencia </p>
+
+                            <h3 class="default_section_heading raleway navy_blue"><span class="font_200"> A la hora de
+                                </span> Gestionar <span class="font_200"> tu empresa </span></h3>
+
+                            <hr class="default_divider default_divider_blue " style="margin-left: 0;">
+
+                            <p class="default_text_light default_text open_sans">
+
+                                Nuestra plataforma MYBOX es un sistema de gestión de comercio electrónico completo, por
+                                lo tanto, cuenta con funciones para la administración del sitio, sistema y envío de
+                                reportes de ventas, compras en línea integrando sistemas de envíos, diferentes métodos y
+                                sistemas de pago, venta productos, manejo de inventario, actualización de precios, y
+                                más. Todo esto te ahorrará tiempo y dinero.
+
+                            </p>
+
+                            <!--div class="progress_bar_outer_div">
+
+                            <div class="row">
+
+                                <div class="col-md-12">
+
+                                    <div class="progress_outer">
+
+                                        <h3 class="small_heading_navy raleway default_small_heading navy_blue h3_pink font_400">Desarrollo</h3>
+
+                                        <div class="progress progress_bar bg_white">
+
+                                            <div class="progress-bar bg_pink" style="width: 84%;" role="progressbar" aria-valuenow="84" aria-valuemin="0" aria-valuemax="100">
+
+                                                <span class="bg_navy">84%</span>
+
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                                <div class="col-md-12">
+
+                                    <div class="progress_outer">
+
+                                        <h3 class="small_heading_navy default_small_heading navy_blue raleway font_400">Diseño</h3>
+
+                                        <div class="progress progress_bar bg_white">
+
+                                            <div class="progress-bar bg_pink" style="width: 98%;" role="progressbar" aria-valuenow="98" aria-valuemin="0" aria-valuemax="100">
+
+                                                <span class="bg_navy">98%</span>
+
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                                <div class="col-md-12">
+
+                                    <div class="progress_outer">
+
+                                        <h3 class="small_heading_navy default_small_heading navy_blue raleway font_400">Expancion de tu empresa</h3>
+
+                                        <div class="progress progress_bar bg_white">
+
+                                            <div class="progress-bar bg_pink" style="width: 96%;" role="progressbar" aria-valuenow="96" aria-valuemin="0" aria-valuemax="100">
+
+                                                <span class="bg_navy">96%</span>
+
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                                <div class="col-md-12">
+
+                                    <div class="progress_outer">
+
+                                        <h3 class="small_heading_navy default_small_heading navy_blue raleway font_400">Aumentos de tus ventas</h3>
+
+                                        <div class="progress progress_bar bg_white">
+
+                                            <div class="progress-bar bg_pink" style="width: 86%;" role="progressbar" aria-valuenow="86" aria-valuemin="0" aria-valuemax="100">
+
+                                                <span class="bg_navy">86%</span>
+
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div-->
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- half Section Ended -->
+
+        <!-- Pricing Table -->
+
+        <section class="pricing_section big_padding bg_grey" id="planes">
+
+            <div class="container">
+
+                <div class="pricing_table_section">
+
+                    <p class="default_text raleway text-center default_small_heading blue_color font_200">
+
+                        Sabemos que necesitas algo especial
+
+                    </p>
+
+                    <h2 class="default_section_heading text-center">
+
+                        <span class="font_200">
+
+                            Conoce los
+
+                        </span>
+
+                        diferentes planes
+
+                        <span class="font_200">
+
+                            de MYBOX
+
+                        </span>
+
+                    </h2>
+
+                    <hr class="default_divider default_divider_blue default_divider_big">
+
+                    <div class="row row-eq-height">
+
+                        <div class="col-sm-4">
+
+                            <div class="pricing_table_column wow slideInLeft">
+
+                                <h3 class="small_heading_navy raleway">PLAN COWORKING<br></h3>
+
+                                <div class="price">
+
+                                    <div class="row">
+
+                                        <div class="col-xs-12 col-md-7">
+
+                                            <h2 class="open_sans font_400 pink_color"><span
+                                                    class="dollar raleway">COP</span>50.000<br><span
+                                                    class="month raleway">Mensual</span></h2>
+
+                                        </div>
+
+                                        <div class="col-xs-12 col-xs-5">
+
+                                            <p style="overflow-wrap: break-word;">Para emprendedores de largo plazo</p>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                                <ul class="packages">
+
+                                    <li><i class="fa fa-check" aria-hidden="true"></i>Productos ilimitados</li>
+
+                                    <li><i class="fa fa-check" aria-hidden="true"></i>Formación y capacitación
+                                        e-learning</li>
+
+                                    <li><i class="fa fa-check" aria-hidden="true"></i>Integración con pasarela de pagos
+                                    </li>
+
+                                    <li><i class="fa fa-check" aria-hidden="true"></i>Segmentación y clasificación de
+                                        clientes </li>
+
+                                    <li><i class="fa fa-check" aria-hidden="true"></i>Gestión de pedidos</li>
+
+                                    <li><i class="fa fa-check" aria-hidden="true"></i>Creación de cupones promocionales
+                                    </li>
+
+                                    <li><i class="fa fa-check" aria-hidden="true"></i>Tienda privada</li>
+
+                                    <li><i class="fa fa-check" aria-hidden="true"></i>Entregas o agendamiento de
+                                        servicios en local o punto de venta</li>
+
+                                </ul>
+
+                                <div class="pricing_button">
+                                    <a href="#." class="bg_pink button button_default_style open_sans bg_before_navy"
+                                        data-toggle="modal" data-target="#modalCoworking">Compralo Ahora</a>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="col-sm-4">
+
+                            <div class="pricing_table_column blue_price wow fadeInUpBig" id="gradient3">
+
+                                <h3 class="small_heading_navy raleway white_color">PLAN PREPAGO</h3>
+
+                                <div class="price">
+
+                                    <div class="row">
+
+                                        <div class="col-xs-12 col-md-7">
+
+                                            <h2 class="open_sans font_400 white_color"><span
+                                                    class="dollar raleway">COP</span>20.000<br><span
+                                                    class="month raleway">Variable</span></h2>
+
+                                        </div>
+
+                                        <div class="col-xs-12 col-md-5">
+
+                                            <p style="overflow-wrap: break-word;">Para emprendedores proactivos.</p>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                                <ul class="packages">
+
+                                    <li><i class="fa fa-check" aria-hidden="true"></i>Productos ilimitados</li>
+
+                                    <li><i class="fa fa-check" aria-hidden="true"></i>Formación y capacitación
+                                        e-learning</li>
+
+                                    <li><i class="fa fa-check" aria-hidden="true"></i>Integración con pasarela de pagos
+                                    </li>
+
+                                    <li><i class="fa fa-check" aria-hidden="true"></i>Segmentación y clasificación de
+                                        clientes </li>
+
+                                    <li><i class="fa fa-check" aria-hidden="true"></i>Gestión de pedidos</li>
+
+                                    <li><i class="fa fa-check" aria-hidden="true"></i>Creación de cupones promocionales
+                                    </li>
+
+                                    <li><i class="fa fa-check" aria-hidden="true"></i>Tienda privada</li>
+
+                                    <li><i class="fa fa-check" aria-hidden="true"></i>Entregas o agendamiento de
+                                        servicios en local o punto de venta</li>
+
+                                    <li><i class="fa fa-check" aria-hidden="true"></i>Pago de incentivos por referidos o
+                                        ingresos recurrentes.</li>
+
+                                    <li><i class="fa fa-check" aria-hidden="true"></i>Manejo y control de domicilios
+                                    </li>
+
+                                </ul>
+
+                                <div class="pricing_button">
+                                    <a href="#." class="bg_pink button button_default_style open_sans bg_before_navy"
+                                        data-toggle="modal" data-target="#modalPrepago">Compralo Ahora</a>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="col-sm-4">
+
+                            <div class="pricing_table_column wow slideInRight">
+
+                                <h3 class="small_heading_navy raleway">PLAN ASISTENCIA TOTAL</h3>
+
+                                <div class="price">
+
+                                    <div class="row">
+
+                                        <div class="col-xs-12 col-md-7">
+
+                                            <h2 class="open_sans font_400 pink_color"><span
+                                                    class="dollar raleway">COP</span>400.000<br><span
+                                                    class="month raleway">Pago Único</span></h2>
+
+                                        </div>
+
+                                        <div class="col-xs-12 col-md-5">
+
+                                            <p style="overflow-wrap: break-word;">Despreocupate, nosotros nos encargamos
+                                                de todo.</p>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                                <ul class="packages">
+
+                                    <li><i class="fa fa-check" aria-hidden="true"></i>Productos ilimitados</li>
+
+                                    <li><i class="fa fa-check" aria-hidden="true"></i>Asistencia para creación de
+                                        productos</li>
+
+                                    <li><i class="fa fa-check" aria-hidden="true"></i>Asistencia para parametrización de
+                                        tienda</li>
+
+                                    <li><i class="fa fa-check" aria-hidden="true"></i>Asistencia para creación de
+                                        programa de recompensas para clientes frecuentes</li>
+
+                                    <li><i class="fa fa-check" aria-hidden="true"></i>Asistencia para manejo de costos
+                                        logísticos y pagos por internet</li>
+
+                                    <li><i class="fa fa-check" aria-hidden="true"></i>Asistencia para manejo de campañas
+                                        de marketing y lanzamiento de tienda</li>
+
+                                    <li><i class="fa fa-check" aria-hidden="true"></i>Asistencia para manejo de campañas
+                                        de lanzamiento y activación de tienda </li>
+
+                                    <li><i class="fa fa-check" aria-hidden="true"></i>Acceso a informes de Analítica de
+                                        información</li>
+
+                                    <li><i class="fa fa-check" aria-hidden="true"></i>Licencia exclusiva para uso de
+                                        plataforma tecnológica</li>
+
+                                    <li><i class="fa fa-check" aria-hidden="true"></i>Segmentación y clasificación de
+                                        clientes</li>
+                                    <br>
+                                    <br>
+                                </ul>
+
+                                <div class="pricing_button">
+
+                                    <a href="#." class="bg_pink button button_default_style open_sans bg_before_navy"
+                                        data-toggle="modal" data-target="#modalAsistencia">Compralo Ahora</a>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- /Pricing Table -->
+
+        <!-- Customer Review Slider -->
+
+        <section class="customer_feedback_section big_padding text-center">
+
+            <div class="container">
+
+                <div class="feedaback_inner">
+
+                    <img src="images/cutomer_quote.png" alt="cutomer_quote" class="quote_pic">
+
+                    <h2 class="default_section_heading text-center white_color">
+
+                        <span class="font_200">
+
+                            Lo que
+
+                        </span>
+
+                        dicen
+
+                        <span class="font_200">
+
+                            nuestros clientes
+
+                        </span>
+
+                    </h2>
+
+                    <hr class="default_divider default_divider_white default_divider_big">
+
+                    <div class="swiper-container customer_feedback_slider white_pagination">
+
+                        <div class="swiper-wrapper">
+
+                            <div class="swiper-slide">
+
+                                <p class="customer_feedback_text white_color open_sans default_text font_200">
+
+
+                                    Con MYBOX tengo la tranquilidad de saber que mi emprendimiento está en buenas manos
+                                    y que he arrancado con el pie derecho.
+
+                                </p>
+
+                                <p class="customer_feedback_name white_color open_sans default_small_heading font_600">
+                                    Lina Rivas, Bogotá, Colombia</p>
+
+                            </div>
+
+                            <div class="swiper-slide">
+
+                                <p class="customer_feedback_text white_color open_sans default_text font_200">
+
+
+                                    Antes de emprender, tenía muchas dudas acerca de mi modelo negocio, si funcionaría o
+                                    no, acerca de mi capacidad técnica para llevarlo acabo y montón de cosas más. Los
+                                    amigos de MYBOX me han hecho sentir muy seguro acerca de mi decisión y además han
+                                    aportado valor agregado a mi plan inicial. Sin dudas la mejor opción ahí fuera.
+
+                                </p>
+
+                                <p class="customer_feedback_name white_color open_sans default_small_heading font_600">
+                                    Maximiliano Aristigueta - Cali, Colombia</p>
+
+                            </div>
+
+                            <div class="swiper-slide">
+
+                                <p class="customer_feedback_text white_color open_sans default_text font_200">
+
+
+                                    Conocí a MYBOX por medio de un amigo colombiano que habló acerca de ellos y cómo le
+                                    ayudaron a aclarar ideas sobre su emprendimiento y materializarlo. Nos hemos
+                                    asociado y en este momento operamos en dos países con muy bajos costes y con poco
+                                    conocimiento técnico de parte de nosotros porque de esa parte se encarga MYBOX. Es
+                                    una buena elección si no se cuentan con los recursos tecnológicos o conocimientos
+                                    necesarios para tener un modelo de negocio basado en el e-commerce.
+
+                                </p>
+
+                                <p class="customer_feedback_name white_color open_sans default_small_heading font_600">
+                                    Axel Fernandez - Buenos Aires, Argentina</p>
+
+                            </div>
+
+                        </div>
+
+                        <!-- Add Pagination -->
+
+                        <div class="swiper-pagination"></div>
+
+                        <!-- Add Arrows -->
+
+                        <div class="swiper-button-next fa fa-angle-right hidden-sm hidden-xs"></div>
+
+                        <div class="swiper-button-prev fa fa-angle-left hidden-sm hidden-xs"></div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- /Customer Review Slider -->
+
+    </section>
+
+    <!-- /Blog Section -->
+
+    <!-- Google Map Section -->
+
+    <!--<section id="map"></section> -->
+
+    <!--iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.5477276802985!2d-74.10628352492665!3d4.674408673353923!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f9b1168e4e531%3A0x969d941054ac2855!2sGEV%20Proyecta%20SAS!5e0!3m2!1ses!2sve!4v1597421557758!5m2!1ses!2sve" width="100%" height="500" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe-->
+    <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.545861902803!2d-74.10817078555328!3d4.674737443184563!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f9b73d3820cd9%3A0xbdefdc3f55a56945!2sCra.%2073%20%2355-81%2C%20Bogot%C3%A1%2C%20Colombia!5e0!3m2!1ses!2sve!4v1597431469821!5m2!1ses!2sve"
+        width="100%" height="500" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+        tabindex="0"></iframe>
+    <!-- /Google Map Section -->
+
+    <!-- Contact Form Section -->
+
+    <section class="contact_form_section" id="contacto">
+
+        <div class="container">
+
+            <div class="row">
+
+                <div class="contact_form_inner big_padding clearfix">
+
+                    <div class="col-md-6 wow slideInLeft">
+
+                        <div class="contact_form_detail  center_on_mobile">
+
+                            <p class="default_small_heading raleway blue_color font_200">Ubícanos</p>
+
+                            <h3 class="default_section_heading raleway navy_blue"> <span class="font_200">Mantengámonos
+                                    en </span> contacto</h3>
+
+                            <hr class="default_divider default_divider_blue " style="margin-left: 0;">
+
+                            <p class="default_text_light default_text open_sans">
+
+                                Para su comodidad puede contactar directamente marcando el número telefónico indicado. O
+                                también si lo desea puede escribirnos a través del Formulario de Contacto, gustosamente
+                                le responderemos a la brevedad posible. <br>
+                                Escríbanos y solicite un presupuesto sin compromiso de nuestros servicios, gustosamente
+                                le responderemos…
+
+                            </p>
+
+                            <div class="row">
+
+                                <div class="contact_form_extra_inner clearfix center_on_mobile">
+
+                                    <div class="col-md-1 col-sm-12 form_padding_left_0">
+
+                                        <i class="fa fa-map-marker blue_color text-center form_icon"
+                                            aria-hidden="true"></i>
+
+                                    </div>
+
+                                    <div class="col-md-11 col-sm-12">
+
+                                        <p class="default_text form_text open_sans default_text_light">
+
+                                            Cra. 73 # 55 - 81
+
+                                        </p>
+
+                                        <p class="default_text form_text open_sans default_text_light">
+
+                                            Cundinamarca , Bogotá
+                                        </p>
+
+                                    </div>
+
+                                </div>
+
+                                <div class="contact_form_extra_inner clearfix center_on_mobile">
+
+                                    <div class="col-md-1 col-sm-12 form_padding_left_0">
+
+                                        <i class="fa fa-phone blue_color text-center form_icon" aria-hidden="true"></i>
+
+                                    </div>
+
+                                    <div class="col-md-11 col-sm-12">
+
+                                        <p class="default_text form_text open_sans default_text_light">
+
+
+
+                                        </p>
+
+                                        <p class="default_text form_text open_sans default_text_light">
+
+                                            +57 350 7277968
+
+                                        </p>
+
+                                    </div>
+
+                                </div>
+
+                                <div class="contact_form_extra_inner clearfix center_on_mobile">
+
+                                    <div class="col-md-1 col-sm-12 form_padding_left_0">
+
+                                        <i class="fa fa-globe blue_color text-center form_icon" aria-hidden="true"></i>
+
+                                    </div>
+
+                                    <div class="col-md-11 col-sm-12">
+
+                                        <a href="#." class="anchor_style_default">
+
+                                            <p class="default_text form_text open_sans default_text_light">
+
+                                                mybox.gev@gmail.com
+
+                                            </p>
+
+                                        </a>
+
+                                        <a href="#." class="anchor_style_default">
+
+                                            <p class="default_text form_text open_sans default_text_light">
+
+                                                https://mybox.red
+
+                                            </p>
+
+                                        </a>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="col-md-6 wow slideInRight">
+
+                        <form onsubmit="return false" class="form_class">
+
+                            <div class="row">
+
+                                <div class="mew_form clearfix">
+                                    <div class="col-sm-12" id="result"></div>
+
+                                    <div class="col-sm-6">
+
+                                        <input placeholder="Su nombre" class="form_inputs" id="name" name="name"
+                                            required="required">
+
+                                    </div>
+
+                                    <div class="col-sm-6">
+
+                                        <input placeholder="Email" class="form_inputs" id="email" name="email"
+                                            required="required">
+
+                                    </div>
+
+                                    <div class="col-sm-12">
+
+                                        <textarea placeholder="Su mensaje" class="form_inputs form_textarea"
+                                            id="message" name="message" required="required"></textarea>
+
+                                    </div>
+
+                                    <div class="col-xs-12">
+
+                                        <div class="button_div  center_on_mobile">
+                                            <input id="submit_handle" type="submit" style="display: none" />
+                                            <a href="javascript:" id="submit_btn"
+                                                class="bg_pink button button_default_style open_sans bg_before_navy"> <i
+                                                    class="fa fa-envelope" aria-hidden="true"></i> Enviar mensajes</a>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </form>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- /Contact Form  Section -->
+
+    <!-- Footer Section -->
+
+    <footer class="footer_section big_padding bg_navy" id="gradient2">
+
+        <div class="container">
+
+            <div class="footer_detail">
+
+                <ul class="footer_links text-center">
+
+                    <li>
+
+                        <a class="anchor_style_default facebook wow zoomInDown"
+                            href="https://www.facebook.com/myboxbog/">
+
+                            <i class="text-center fa fa-facebook "></i>
+
+                        </a>
+
+                    </li>
+
+                    <li>
+
+                        <a class="anchor_style_default instagram wow zoomInUp"
+                            href="https://www.instagram.com/myboxbogota/">
+
+                            <i class="text-center fa fa-instagram "></i>
+
+                        </a>
+
+                    </li>
+
+                    <li>
+
+                        <a class="anchor_style_default youtube wow zoomInDown"
+                            href="https://www.youtube.com/channel/UCa-tO7TyPtBjAHnpipDla_A">
+
+                            <i class="text-center fa fa-youtube "></i>
+
+                        </a>
+
+                    </li>
+
+                </ul>
+
+                <p class="text-center default_text open_sans white_color">&copy; 2018 MYBOX, Todos los derechos
+                    reservados. </p>
+
+            </div>
+
+        </div>
+
+    </footer>
+    <input type="button" value="PASARELA" onclick="handler.open(data);" class="btn btn-success" id="btn_pasarela"
+        style="display:none;"/>
+    <!-- /Footer Section -->
+
+    <!-- /Parent Section Ended -->
+
+    <!-- jQuery 2.2.0-->
+    <script src="js/jquery.js"></script>
+
+    <!-- Google Map Api -->
+    <!--script src="https://maps.google.com/maps/api/js?key=AIzaSyAOBKD6V47-g_3opmidcmFapb3kSNAR70U"
+        type="text/javascript"></script>
+    <script src="js/map.js" type="text/javascript"></script-->
+
+
+    <!-- REVOLUTION JS FILES -->
+    <script type="text/javascript" src="js/jquery.themepunch.tools.min.js"></script>
+    <script type="text/javascript" src="js/jquery.themepunch.revolution.min.js"></script>
+
+    <!-- SLIDER REVOLUTION 5.0 EXTENSIONS  (Load Extensions only on Local File Systems !  The following part can be removed on Server for On Demand Loading) -->
+    <script type="text/javascript" src="js/extensions/revolution.extension.actions.min.js"></script>
+    <script type="text/javascript" src="js/extensions/revolution.extension.carousel.min.js"></script>
+    <script type="text/javascript" src="js/extensions/revolution.extension.kenburn.min.js"></script>
+    <script type="text/javascript" src="js/extensions/revolution.extension.layeranimation.min.js"></script>
+    <script type="text/javascript" src="js/extensions/revolution.extension.migration.min.js"></script>
+    <script type="text/javascript" src="js/extensions/revolution.extension.navigation.min.js"></script>
+    <script type="text/javascript" src="js/extensions/revolution.extension.parallax.min.js"></script>
+    <script type="text/javascript" src="js/extensions/revolution.extension.slideanims.min.js"></script>
+    <script type="text/javascript" src="js/extensions/revolution.extension.video.min.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Owl Carousel 2 Core JavaScript -->
+    <script src="js/owl.carousel.js"></script>
+    <script src="js/owl.animate.js"></script>
+    <script src="js/owl.autoheight.js"></script>
+    <script src="js/owl.autoplay.js"></script>
+    <script src="js/owl.autorefresh.js"></script>
+    <script src="js/owl.hash.js"></script>
+    <script src="js/owl.lazyload.js"></script>
+    <script src="js/owl.navigation.js"></script>
+    <script src="js/owl.support.js"></script>
+    <script src="js/owl.video.js"></script>
+
+    <!-- Fancy Box Javacript -->
+    <script src="js/jquery.fancybox.js"></script>
+
+    <!-- Wow Js -->
+    <script src="js/wow.min.js"></script>
+
+    <!-- Appear Js-->
+    <script src="js/jquery.appear.js"></script>
+
+    <!-- Countdown Js -->
+    <script src="js/jquery.countdown.js"></script>
+
+    <!-- Parallax Js -->
+    <script src="js/parallax.min.js"></script>
+
+    <!-- Cube Portfolio Core JavaScript -->
+    <script src="js/jquery.cubeportfolio.min.js"></script>
+
+    <!-- Circliful Core JavaScript -->
+    <script src="js/jquery.circliful.min.js"></script>
+
+    <!-- Swiper Slider Core JavaScript -->
+    <script src="js/swiper.min.js"></script>
+    <!-- Sweet Alert -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+    <!-- Custom JavaScript -->
+    <script src="js/script.js"></script>
+
+    <!-- Widget Whatsapp -->
+    <script async data-id="58204" src="https://cdn.widgetwhats.com/script.min.js"></script>
+
+    <script type="text/javascript" src="https://checkout.epayco.co/checkout.js?version=1597509035004"></script>
+    <script>
+        function Recoger_Datos() {
+            $('#modalAsistencia').modal('hide');
+            $('#modalAsistencia2').modal('show');
+        }
+
+        function Pagar() {
+            NOM_PLAN = 'ASISTENCIA COMPLETA';
+            COSTO_DINERO = '300000';
+            DIAS_USO = '30 DIAS';
+            EMAIL_PREVENTIVO = $("#EMAIL_PREVENTIVO").val();
+            if (EMAIL_PREVENTIVO == '') {
+                Swal.fire("POR FAVOR DIGITE SU CORREO ELECTRONICO.", "", "error");
+                return 0;
+            }
+            $('#GIF_CARGUE').show();
+            $('#BESM').hide();
+            var caracteres = "012346789";
+            var NUM_REF = "";
+            for (i = 0; i < 5; i++) NUM_REF += caracteres.charAt(Math.floor(Math.random() * caracteres.length));
+            REFERENCIA = NUM_REF;
+            datos = { 'EMAIL_PREVENTIVO': EMAIL_PREVENTIVO, 'REFERENCIA': REFERENCIA };
+            $.ajax({
+                url: 'https://mybox.red/Startup/PHP/Notificaciones_Asis_Total.php',
+                data: datos,
+                type: 'POST',
+                success: function (R) {
+                    //alert(R);
+                }
+            });
+
+            var datos = {
+                //Parametros compra (obligatorio)
+                name: "PLAN MYBOX ASISTENCIA COMPLETA",
+                description: "PLAN MYBOX: " + NOM_PLAN,
+                invoice: REFERENCIA,
+                currency: "cop",
+                amount: COSTO_DINERO,
+                tax_base: "0",
+                tax: "0",
+                country: "co",
+                lang: "es",
+                extra1: NOM_PLAN,
+                //Onpage="false" - Standard="true"
+                external: "true",
+                response: "https://mybox.red/Startup/Respuesta.php",
+            }
+
+            data = datos;
+
+            $('#GIF_CARGUE').hide();
+            $('#BESM').show();
+            $("#btn_pasarela").trigger('click');
+        }
+
+        var handler = ePayco.checkout.configure({
+            key: '0d2d0f2e3fec2990b8a96aaa5172296e',
+            test: false
+        });
+
+        var data = {};
+
+        function Enviar_Solicitud() {
+            NOMBRE_SOL = $("#NOMBRE_SOL").val();
+            CELULAR_SOL = $("#CELULAR_SOL").val();
+            CORREO_SOL = $("#CORREO_SOL").val();
+            if (NOMBRE_SOL === '') { Swal.fire("DIGITA TU NOMBRE", "", "error"); return 0; }
+            if (CORREO_SOL === '') { Swal.fire("DIGITA TU CORREO", "", "error"); return 0; }
+            if (CELULAR_SOL === '') { Swal.fire("DIGITA TU CELULAR", "", "error"); return 0; }
+            datos = { 'NOMBRE_SOL': NOMBRE_SOL, 'CELULAR_SOL': CELULAR_SOL, 'CORREO_SOL': CORREO_SOL };
+            $.ajax({
+                url: 'https://mybox.red/Startup/PHP/Enviar_Solicitud.php',
+                data: datos,
+                type: 'POST',
+                success: function (R) {
+                    if (R == 1) {
+                        Swal.fire({
+                            title: 'HEMOS RECIBIDO TUS DATOS',
+                            text: "Lo antes posible estaremos en contacto!",
+                            icon: 'success',
+                            showCancelButton: false,
+                            confirmButtonColor: '#3085d6',
+                            cancelButtonColor: '#d33',
+                            confirmButtonText: 'OK'
+                        }).then((result) => {
+                            if (result.value) {
+                                location.reload();
+                            } else {
+                                location.reload();
+                            }
+                        })
+                    } else {
+                        Swal.fire("HA OCURRIDO UN ERROR =(", "", "error");
+                        return 0;
+                    }
+                }
+            });
+        }
+
+
+        function Comprar_Prepago() {
+            NOMBRE = $("#NOMBRE_PREPAGO").val();
+            EMAIL = $("#EMAIL_PREPAGO").val();
+            NIT = $("#NIT_PREPAGO").val();
+            VALOR_RECARGA = $("#VALOR_RECARGA_PREPAGO").val();
+            CODIGO_CORTESIA = $("#CODIGO_CORTESIA").val();
+            if (NOMBRE === '') { Swal.fire("ESCRIBE TU NOMBRE"); return 0; }
+            if (EMAIL === '') { Swal.fire("ESCRIBE UN EMAIL VALIDO"); return 0; }
+            if (NIT === '') { Swal.fire("ESCRIBE TU NIT O TU NUMERO DE DOCUMENTO"); return 0; }
+            if (CODIGO_CORTESIA === '') {
+                if (VALOR_RECARGA === '') { Swal.fire("DIGITA EL VALOR DE LA RECARGA"); return 0; }
+                if (VALOR_RECARGA < '20000') { Swal.fire("EL VALOR MINIMO DE RECARGA ES $20.000 COP"); return 0; }
+                datos = { 'NIT': NIT };
+                $.ajax({
+                    url: 'https://mybox.red/Startup/PHP/Validar_Empresa.php',
+                    data: datos,
+                    type: 'POST',
+                    success: function (R) {
+                        if (R == 1) {
+                            //ajax para enviar un email y sms de si le pasa algo
+                            datos_two = { 'EMAIL': EMAIL };
+                            $.ajax({
+                                url: 'https://mybox.red/Startup/PHP/Notificar_Prepago_Preventivo.php',
+                                data: datos_two,
+                                type: 'POST',
+                                success: function (Re) {
+                                    var caracteres = "012346789";
+                                    var NUM_REF = "";
+                                    for (i = 0; i < 5; i++) NUM_REF += caracteres.charAt(Math.floor(Math.random() * caracteres.length));
+                                    REFERENCIA = NUM_REF;
+                                    NOM_PLAN = 'PREPAGO';
+                                    var datos = {
+                                        //Parametros compra (obligatorio)
+                                        name: "RECARGA MYBOX PREPAGO",
+                                        description: "RECARGA SALDO MYBOX POR VALOR DE: " + VALOR_RECARGA,
+                                        invoice: REFERENCIA,
+                                        currency: "cop",
+                                        amount: VALOR_RECARGA,
+                                        tax_base: "0",
+                                        tax: "0",
+                                        country: "co",
+                                        lang: "es",
+                                        extra1: NOMBRE,
+                                        extra2: NIT,
+                                        extra3: EMAIL,
+                                        extra4: NOM_PLAN,
+                                        //Onpage="false" - Standard="true"
+                                        external: "true",
+                                        response: "https://mybox.red/Startup/php/Registrar_Prepago.php"
+                                    }
+                                    data = datos;
+                                    $("#btn_pasarela").trigger('click');
+                                }
+                            });
+                        } else {
+                            Swal.fire("EL COMERCIO YA SE ENCUENTRA REGISTRADO", "", "warning");
+                            return 0;
+                        }
+                    }
+                });
+            } else {
+                var caracteres = "012346789";
+                var NUM_REF = "";
+                for (i = 0; i < 5; i++) NUM_REF += caracteres.charAt(Math.floor(Math.random() * caracteres.length));
+                REFERENCIA = NUM_REF;
+                datos = { 'NOMBRE': NOMBRE, 'NIT': NIT, 'EMAIL': EMAIL, 'CODIGO_CORTESIA': CODIGO_CORTESIA, 'REFERENCIA': REFERENCIA };
+                $.ajax({
+                    url: 'https://mybox.red/Startup/PHP/Validar_Empresa_Cortesia.php',
+                    data: datos,
+                    type: 'POST',
+                    success: function (R) {
+
+                        /*
+                        1 todo exitoso full hd
+                        2 la cortesia ha caducado
+                        3 se acabo el limite de usos de la cortesia
+                        4 ha ocurrido un error al insertar el saldo
+                        5 la cortesia no esta disponible para el plan prepago
+                        6 no existe la cortesia
+                        7 ya existes en el sistema
+                        */
+
+                        if (R == 11) {
+                            Swal.fire("Registro hecho exitosamente", "Hemos enviado un correo para que termines tu registro", "success");
+                            $("#formulario_prepago")[0].reset();
+                            $("#btn_cerrar_modal_prepago").trigger('click');
+                            return 0;
+                        } else if (R == 2) {
+                            Swal.fire("La cortesia ha caducado", "", "warning");
+                            return 0;
+                        } else if (R == 3) {
+                            Swal.fire("La cortesia acabo el limite de usos", "", "warning");
+                            return 0;
+                        } else if (R == 4) {
+                            Swal.fire("Ha ocurrido un error interno", "Contacta con soporte", "error");
+                            return 0;
+                        } else if (R == 5) {
+                            Swal.fire("La cortesia no esta disponible en el plan PREPAGO", "", "warning");
+                            return 0;
+                        } else if (R == 6) {
+                            Swal.fire("No existe el codigo promocional", "Verifica los datos", "error");
+                            return 0;
+                        } else if (R == 7) {
+                            Swal.fire("Ya estas registrado en el sistema", "Accede aqui: https://www.serviciosproyecta.net/mybox/Login/", "warning");
+                            return 0;
+                        }
+                    }
+                });
+            }
+        }
+
+        function Cargar_Departamentos() {
+            $.get("https://mybox.red/Startup/PHP/Consultar_Departamentos.php", function (respuesta) {
+                $("#DEPARTAMENTOS_AJAX").html(respuesta);
+            });
+        }
+
+        //window.onload = Cargar_Departamentos();
+
+        function Combobox_Tipo_Negocio() {
+            $.get("https://mybox.red/Startup/PHP/Combobox_Tipos_Negocio.php", function (respuesta) {
+                $("#Combobox_Tipo_Negocio").html(respuesta);
+            });
+        }
+
+        //window.onload = Combobox_Tipo_Negocio();
+
+        function DEPART(selectObject) {
+            DEPARTAMENTO = selectObject.value;
+            datos = { 'DEPARTAMENTO': DEPARTAMENTO };
+            $.ajax({
+                url: 'https://mybox.red/Startup/PHP/Consultar_Municipios.php',
+                data: datos,
+                type: 'POST',
+                success: function (Result) {
+                    $("#MUNICIPIO_ONE").html(Result);
+                }
+            });
+        }
+
+
+        $(function () {
+            $("#Form_Crear_Cuenta").on("submit", function (e) {
+                e.preventDefault();
+                var f = $(this);
+                var formData = new FormData(document.getElementById("Form_Crear_Cuenta"));
+                $.ajax({
+                    url: "https://mybox.red/Startup/PHP/Guardar_Empresa.php",
+                    type: "POST",
+                    dataType: "html",
+                    data: formData,
+                    cache: false,
+                    contentType: false,
+                    processData: false
+                })
+
+                    .done(function (res) {
+                        if (res == 0) {
+                            Swal.fire('ERROR AL GUARDAR LOS DATOS.', "", "error");
+                        } else if (res == 1) {
+                            //$('#Form_Crear_Cuenta')[0].reset();
+                            $('#Modal_Crea_Cuenta').modal('hide');
+                            $("#btn_modal_opciones").trigger('click');
+                        } else if (res == 2) {
+                            Swal.fire('ERROR AL ENVIAR EMAIL(NOTIFICACION REGISTRO).', "", "error");
+                        } else if (res == 3) {
+                            Swal.fire('ERROR AL ACTIVAR EL PAQUETE DEMO.', "", "error");
+                        } else if (res == 4) {
+                            Swal.fire("LA EMPRESA QUE INTENTA REGISTRAR, YA HA SIDO REGISTRADA", "", "error");
+                        }
+                    });
+            });
+        });
+
+
+        function Ingresar() {
+            NIT_EMPRESA = $("#NIT_EMPRESA").val();
+            DOC_USUARIO = $("#DOCUMENTO_USUARIO").val();
+            PASS_ONE = $("#PASSWORD").val();
+            PERFIL = 1;
+            datos = { 'NIT_EMPRESA': NIT_EMPRESA, 'DOC_USUARIO': DOC_USUARIO, 'PASS_ONE': PASS_ONE, 'PERFIL': PERFIL };
+            $.ajax({
+                url: 'https://mybox.red/Startup/PHP/Sesion_Catalogo.php',
+                data: datos,
+                type: 'POST',
+                success: function (R) {
+                    if (R == 1 || R == 9) {
+                        window.location.assign('https://www.serviciosproyecta.net/mybox/Administrador/index.php');
+                    } else {
+                        Swal.fire("HA OCURRIDO UN ERROR", "", "error");
+                        return 0;
+                    }
+                }
+            });
+        }
+
+
+        function Comprar_Cooworking() {
+            NOMBRE = $("#NOMBRE_COOWORKING").val();
+            EMAIL = $("#EMAIL_COOWORKING").val();
+            NIT = $("#NIT_COOWORKING").val();
+            TIENDA_PAPA = $("#NIT_PAPA_COOWORKING").val();
+            if (NOMBRE === '') { Swal.fire("DIGITA TU NOMBRE"); return 0; }
+            if (EMAIL === '') { Swal.fire("DIGITA UN EMAIL"); return 0; }
+            if (NIT === '') { Swal.fire("DIGITA TU NUMERO DE DOCUMENTO O NIT"); return 0; }
+            datos = { 'NIT': NIT };
+            $.ajax({
+                url: 'https://mybox.red/Startup/PHP/Validar_Empresa.php',
+                data: datos,
+                type: 'POST',
+                success: function (R) {
+                    if (R == 1) {
+                        //ajax para enviar un email y sms de si le pasa algo
+                        datos_two = { 'EMAIL': EMAIL };
+                        VALOR_RECARGA = '50000';
+                        $.ajax({
+                            url: 'https://mybox.red/Startup/PHP/Notificar_Prepago_Preventivo.php',
+                            data: datos_two,
+                            type: 'POST',
+                            success: function (Re) {
+                                var caracteres = "012346789";
+                                var NUM_REF = "";
+                                for (i = 0; i < 7; i++) NUM_REF += caracteres.charAt(Math.floor(Math.random() * caracteres.length));
+                                REFERENCIA = NUM_REF;
+                                PLAN = 'COOWORKING';
+                                var datos = {
+                                    //Parametros compra (obligatorio)
+                                    name: "COMPRA MYBOX COWORKING",
+                                    description: "COMPRA PLAN MYBOX COWORKING, POR VALOR DE: " + VALOR_RECARGA,
+                                    invoice: REFERENCIA,
+                                    currency: "cop",
+                                    amount: VALOR_RECARGA,
+                                    tax_base: "0",
+                                    tax: "0",
+                                    country: "co",
+                                    lang: "es",
+                                    extra1: NOMBRE,
+                                    extra2: NIT,
+                                    extra3: EMAIL,
+                                    extra4: TIENDA_PAPA,
+                                    extra5: PLAN,
+                                    //Onpage="false" - Standard="true"
+                                    external: "true",
+                                    response: "https://mybox.red/Startup/php/Registrar_Cooworking.php",
+                                }
+                                data = datos;
+                                $("#btn_pasarela").trigger('click');
+                            }
+                        });
+                    } else {
+                        Swal.fire("EL COMERCIO YA SE ENCUENTRA REGISTRADO", "", "warning");
+                        return 0;
+                    }
+                }
+            });
+        }
+    </script>
+</body>
+
+</html>
